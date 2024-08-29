@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Swipe Motivation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fffefe;
+    background-image: url("Vnt.png");
+}
+
+.carousel {
+    width: 80%; 
+    max-width: 600px; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #d2d5ba;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease; /* Smooth zoom transition */
+}
+
+.slide img:hover {
+    transform: scale(1.1); /* Zoom in when hovered */
+}
+
+.controls {
+    display: flex ;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #333;
+    color: #d0cdcd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #555;
+}
+
+span{
+color: #e01313;
+}
+</style>
+
+    <div class="carousel">
+        <div class="slide active">
+            <img src="MongeRatty.png" alt="Motivation Image 1">
+            <p>Keep <b>observing,</b> stay in an <b>awareness</b></p>
+             <nav>beyond your <b>thoughts.</b> Soon you will feel happiness</nav>
+             and you won’t even know why!
+        </div>
+    
+    <div class="slide">
+         <img src="blackCLOVE.png"alt="Human and cloud">
+          <nav>“Whatever you hold in your mind on a</nav>
+          <nav>consistent basis is exactly what you will</nav>
+                 <nav>experience in your life.”</nav>
+                 <p> <span> – Tony Robbins</span></p> 
+    </div>
+
+    <div class="slide">  
+       <img src="Op24-08-14 151328.png" alt="" srcset="">
+       <nav> We have to be <b>kind</b> and <b>compassionate</b> to others.</nav>
+       <nav>Not just because it’s the right thing to do,</nav> 
+       <nav>but because it’s an</nav>
+            <nav style="color: rgb(30, 30, 243);">awesome energy</nav> to exist in!                                
+    </div>
+
+        <div class="slide">
+            <img src="IG_E6355.JPG" alt="Motivation Image 2">
+            <nav>Wake up bro, we’re ascending in</nav>
+             <nav style="color: rgb(230, 8, 215);">Consciousness. </nav>
+        </div>
+
+    <div class=" slide">
+            <img src="G_6393.PNG" alt="anime">
+            <nav>A single moment of <b>misunderstand</b> can be so</nav>
+            <nav><b>poisonous</b> that it can make us forget the many <b>loveable</b></nav> 
+            <nav>moments we spent together.</nav> 
+    </div>
+
+    <div class="slide">
+             <img src="Opv.24-08-14 154304.png" alt="code pc">
+             <nav> we’ve been communicating <u><b>verbally</b></u></nav>
+             <nav>and <u><b>non-verbally</b></u> for millions of years.we’ve</nav>
+             <nav>only been <u><b>emailing</b></u> and <u><b>texting</b></u> for decades.</nav>
+             <nav>Remember that in your digital <nav style="color: rgb(30, 30, 243);"> interactions.</nav>
+    </div>
+
+<div class="slide">
+           <img src="Pice.024-08-24 173600.png" alt="anime">
+           <nav> What if the key to changing</nav>
+           <nav> you life was simply changing your</nav>
+           <nav style="color: rgb(30, 30, 243);"> perspective?</nav>
+</div>
+
+<div class="slide">
+          <img src="Bone.png" alt="Domain">
+          <nav> Going beyond your</nav>
+          <nav> thoughts is spiritual</nav>
+          <nav>evolution, it’s like a</nav>
+          <nav>prerequisite to a higher</nav>
+          <nav>Understanding of <b>reality.</b></nav>
+</div>
+
+<div class="slide">
+         <img src="Dan.R.png" alt="Dan Image">
+         <nav style="color: rgb(30, 30, 243);"> <b>Simplicity</b> of life is <b> Beautiful</b></nav>
+</div>
+
+<div class="slide">
+        <img src="Kakashie24-08-24 172810.png" alt="Cartoon" srcset="">
+        <nav><b>Understanding</b> is an Art</nav>
+               And not everyone is an <b>Artist</b>
+              <p><span> –Kakashi</span></p>   
+</div>
+
+     <div class="slide">
+       <img src="Cat.png" alt="" srcset="">
+       <nav>In every moment we are given the great opportunity to</nav> 
+       <nav> experience and appreciate the gift of</nav>
+         <span>existence.</span>
+       
+    </div>
+
+        <div class="slide">
+            <img src="VFKK8559.JPG" alt="Motivation Image 3">
+           <b> <nav>No man or beast</nav>
+            <nav>is truly your enemy.</nav>
+            <nav> You must</nav>
+            <nav>conquer yourself.</nav>
+            <p>“As above so below.”</p>
+           <span> –The Kybalion</span> </b>
+        </div>
+
+        <div class="controls">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script src="js,script.js"></script>
+</html>
